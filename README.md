@@ -23,13 +23,9 @@ Please read more in the README of the original [roboflow repository](https://git
 ###Clone repositories
 
 ```
-git clone https://github.com/roboflow-ai/zero-shot-object-tracking
-cd zero-shot-object-tracking
-git clone https://github.com/openai/CLIP.git CLIP-repo
-cp -r ./CLIP-repo/clip ./clip          
-
-
-###Install requirements (python 3.7+)
+git clone https://github.com/tulbureandreit/Tracking_with_ScaledYOLOv4
+       
+###Install requirements (python 3.7+) & Ubuntu 20.04 LTS
 
 ```bash
 pip install --upgrade pip
@@ -37,10 +33,10 @@ pip install -r requirements.txt
 ```
 
 
-###Run with ScaledYOLOv4
+###Run with ScaledYOLOv4 (this model is hardcoded in the algo - for other detectors please visit original roboflow repo).
 ```bash
 
-python clip_object_tracker.py --weights models/yolov5s.pt --source data/video/fish.mp4 --detection-engine yolov5 --info
+python clip_object_tracker.py --weights best.pt --source data/video/clean.mp4 --detection-engine scaledyolov4 --info
 ```
 
 
@@ -80,5 +76,6 @@ Huge thanks to:
 - [ScaledYOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4)
 - [Deep SORT Repository by nwojke](https://github.com/nwojke/deep_sort)
 - [Zero-Shot Object Tracking announcement post](https://blog.roboflow.com/zero-shot-object-tracking/)
+
 I do not own the CODE and without any of the above mentioned people or organizations, nothing would have been published.
 
