@@ -30,6 +30,9 @@ Make sure that you installed everything that is needed for ScaledYOLOV4, correct
 
 For the moment this only runs on Ubuntu. I do not know a Windows version that can correctly install mish-cuda. A workaround would be to use another activation function, like ReLU, but then you lose out on ScaledYOLOv4's insane performance.
 
+## We suggest this [tutorial](https://medium.com/analytics-vidhya/install-cuda-11-2-cudnn-8-1-0-and-python-3-9-on-rtx3090-for-deep-learning-fcf96c95f7a1) for installing everything correctly
+
+
 ### Next, clone repositories
 
 ```
