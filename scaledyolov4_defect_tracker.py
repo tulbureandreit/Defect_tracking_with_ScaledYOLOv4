@@ -301,15 +301,15 @@ def detect(save_img=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
-                        default='yolov5s.pt', help='model.pt path(s)')
+                        default='scaledyolov4.pt', help='model.pt path(s)')
     parser.add_argument('--cfg', type=str,
-                        default='yolov4.cfg', help='yolov4 model cfg file path')
+                        default='yolov4-p6.yaml', help='scaledyolov4 model cfg file path')
     parser.add_argument('--names', type=str,
-                        default='coco.names', help='yolov4 names file, file path')
+                        default='coco.names', help='scaledyolov4 names file, file path')
     parser.add_argument('--source', type=str,
                         default='data/images', help='source')
     parser.add_argument('--img-size', type=int, default=640,
-                        help='inference size (pixels)')
+                        help='inference size ')
     parser.add_argument('--confidence', type=float,
                         default=0.25, help='object confidence threshold')
     parser.add_argument('--overlap', type=float,
