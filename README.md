@@ -1,4 +1,4 @@
-# Andrei defect tracking method for getting rid of multiple counting errors
+# Defect tracking method using ScaledYOLOv4 for getting rid of multiple counting errors
 
 
 # Overview
@@ -67,7 +67,7 @@ python scaledyolov4_defect_tracker.py -h
 --view-img                       display results
 --save-txt                       save results to *.txt
 --save-conf                      save confidences in --save-txt labels
---classes CLASSES [CLASSES ...]  filter by class: --class 0, or --class 0 2 3
+--classes CLASSES                filter by class: --class 0, or --class 0 2 3
 --agnostic-nms                   class-agnostic NMS
 --update                         update all models
 --nms_max_overlap                Non-maxima suppression threshold: Maximum detection overlap.
