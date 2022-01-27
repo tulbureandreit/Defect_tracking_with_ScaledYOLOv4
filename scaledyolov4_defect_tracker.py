@@ -306,7 +306,6 @@ if __name__ == '__main__':
                         default='yolov4.cfg', help='yolov4 model cfg file path')
     parser.add_argument('--names', type=str,
                         default='coco.names', help='yolov4 names file, file path')
-    # file/folder, 0 for webcam
     parser.add_argument('--source', type=str,
                         default='data/images', help='source')
     parser.add_argument('--img-size', type=int, default=640,
@@ -333,25 +332,15 @@ if __name__ == '__main__':
                         help='augmented inference')
     parser.add_argument('--update', action='store_true',
                         help='update all models')
-    parser.add_argument('--project', default='runs/detect',
-                        help='save results to project/name')
-    parser.add_argument('--name', default='exp',
-                        help='save results to project/name')
-    parser.add_argument('--exist-ok', action='store_true',
-                        help='existing project/name ok, do not increment')
     parser.add_argument('--nms_max_overlap', type=float, default=1.0,
                         help='Non-maxima suppression threshold: Maximum detection overlap.')
     parser.add_argument('--max_cosine_distance', type=float, default=0.4,
                         help='Gating threshold for cosine distance metric (object appearance).')
     parser.add_argument('--nn_budget', type=int, default=None,
                         help='Maximum size of the appearance descriptors allery. If None, no budget is enforced.')
-    parser.add_argument('--api_key', default=None,
-                        help='Roboflow API Key.')
-    parser.add_argument('--url', default=None,
-                        help='Roboflow Model URL.')
     parser.add_argument('--info', action='store_true',
                         help='Print debugging info.')
-    parser.add_argument("--detection-engine", default="roboflow", help="Which engine you want to use for object detection (yolov5, yolov4, roboflow).")
+    parser.add_argument("--detection-engine", default="roboflow", help="Which engine you want to use for object detection (scaledyoov4, yolov5, yolov4, roboflow).")
     opt = parser.parse_args()
     print(opt)
 
