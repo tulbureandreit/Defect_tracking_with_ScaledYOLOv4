@@ -16,7 +16,7 @@ from utils.general import xyxy2xywh, xywh2xyxy, \
     strip_optimizer, set_logging, increment_path, scale_coords
 from utils.plots import plot_one_box
 from utils.torch_utils import select_device, time_synchronized
-from utils.roboflow import predict_image
+#from utils.roboflow import predict_image
 
 # deep sort imports
 from deep_sort import preprocessing, nn_matching
@@ -25,7 +25,7 @@ from deep_sort.tracker import Tracker
 from tools import generate_clip_detections as gdet
 
 from utils.yolov5 import Yolov5Engine
-from utils.yolov4 import Yolov4Engine
+#from utils.yolov4 import Yolov4Engine
 
 classes = []
 
