@@ -11,7 +11,7 @@ from itertools import repeat
 from multiprocessing.pool import ThreadPool
 from pathlib import Path
 from threading import Thread
-from pypylon import pylon
+#from pypylon import pylon
 import cv2
 import numpy as np
 import torch
