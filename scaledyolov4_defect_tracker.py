@@ -332,6 +332,12 @@ if __name__ == '__main__':
                         help='augmented inference')
     parser.add_argument('--update', action='store_true',
                         help='update all models')
+    parser.add_argument('--project', default='runs/detect',
+                        help='save results to project/name')
+    parser.add_argument('--name', default='exp',
+                        help='save results to project/name')
+    parser.add_argument('--exist-ok', action='store_true',
+                        help='existing project/name ok, do not increment')
     parser.add_argument('--nms_max_overlap', type=float, default=1.0,
                         help='Non-maxima suppression threshold: Maximum detection overlap.')
     parser.add_argument('--max_cosine_distance', type=float, default=0.4,
