@@ -80,7 +80,7 @@ def get_color_for(class_num):
 
     return rgb
 
-def detect(save_img=False):
+def detect(save_img=False): #take care of the default value for save_img
 
     t0 = time_synchronized()
 
@@ -132,7 +132,7 @@ def detect(save_img=False):
         cudnn.benchmark = True  # set True to speed up constant image size inference
         dataset = LoadStreams(source, img_size=(1280, 1280))
     else:
-        save_img = False
+        save_img = True # comment to false if you do not want to save the detection/tracking video and moreover, check the image size below
         dataset = LoadImages(source, img_size=(1280, 1280))
 
     frame_count = 0
